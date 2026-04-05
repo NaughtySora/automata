@@ -74,3 +74,23 @@ and higher abstractions can use it differently.
 - Automata is pretty flexible concept, can be used in many ways
 and serve many purposes. 
 Event-Driven Automata, Distributed, Functional and so on.
+
+# PDA
+
+## DPDA
+- Simple, cannot recognize all CFLs.
+
+## NPDA
+- Can recognize all context-free languages.
+
+## Acceptance
+- Final state, accept if PDA ends in an specific state.
+- Empty stack, accept if stack is empty.
+- Both.
+
+#### Usage
+- Parsing programming languages. 
+- Compiler syntax analysis. 
+- Expression evaluation.
+- Parenthesis/bracket matching.
+- Basic DSL interpreters.
