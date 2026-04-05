@@ -11,14 +11,13 @@ They are the foundation of theoretical computer science, designed to follow a pr
 2. PDA (Push Down Automata)
 - FSM with stack, can store more information.
 3. TM (Turing Machine)
-- A mathematical model,represents the capability of modern computers.
+- A mathematical model, represents the capability of modern computers.
 - Unlimited memory.
 - Can read and write to the memory any amount of time.
 - Categories: multi-tape, non-deterministic, multi-head.
 4. LBA (Linear-Bounded Automata)
-- TM with limited memory, usually <= size of input, 
-can be arbitrary linear size.
-
+- TM with limited memory.
+- Linear bounded memory usually means it equal size of size input.
 
 # FA
 ## DFA (Deterministic Finite Automata)
@@ -94,3 +93,19 @@ Event-Driven Automata, Distributed, Functional and so on.
 - Expression evaluation.
 - Parenthesis/bracket matching.
 - Basic DSL interpreters.
+
+# TM
+
+#### Usage
+- Theoretical model for algorithms.
+- Computability theory.
+- Demonstrating limits of computation.
+- Proving what problems are solvable or not.
+
+# LBA
+
+#### Usage
+- Parsing complex languages.
+- Constrained memory computations.
+- Certain formal language recognition.
+- Intermediate complexity problems.

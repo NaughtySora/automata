@@ -2,6 +2,6 @@
 
 const { resolve } = require('node:path');
 
-const tests = ['FA', 'PDA'];
+const tests = ['FA', 'PDA', 'TM'];
 
 for (const test of tests) require(resolve(__dirname, `${test}.js`));
