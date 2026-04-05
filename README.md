@@ -18,3 +18,59 @@ They are the foundation of theoretical computer science, designed to follow a pr
 4. LBA (Linear-Bounded Automata)
 - TM with limited memory, usually <= size of input, 
 can be arbitrary linear size.
+
+
+# FA
+## DFA (Deterministic Finite Automata)
+- Can only have one possible next state.
+- State change example, s1 -> s2
+
+#### Usage
+- Lexical analysis (tokenizer).
+- Simple pattern matching.
+- Protocol state tracking.
+- UI state machines.
+- Doors, turnstile logic.
+
+## NFA (Nondeterministic Finite Automata)
+- Can have multiple next states.
+- State change example, s1 -> {s2, s5, s10}
+
+#### Usage
+- Regex engines.
+- Pattern recognition.
+
+## Mealy
+- Changes state depending on both current state and input.
+- Outputs both new state and data.
+
+#### Usage 
+- Signal processing.
+- Synchronous circuits.
+- Streaming data transformation.
+- Protocols that emit events per input.
+
+## Moore
+- Changes state depending on current state.
+- Output decided only on state.
+
+#### Usage
+- Counters.
+- Sequence detectors.
+- Finite control in digital circuits.
+- Embedded systems.
+
+## None
+- Doesn't produce an output.
+
+### Notes
+- Since all the automata attributes are just a concept
+the implementation of the machine is not required to be
+specifically Moore or Mealy, or DFA or NFA etc.
+
+- Machine can be implemented as just bare state and methods to control it,
+and higher abstractions can use it differently.
+
+- Automata is pretty flexible concept, can be used in many ways
+and serve many purposes. 
+Event-Driven Automata, Distributed, Functional and so on.
